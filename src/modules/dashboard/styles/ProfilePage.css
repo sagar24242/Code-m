@@ -1,0 +1,134 @@
+.profile-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0e0e0 !important;
+  }
+  
+  .profile-sidebar,
+  .profile-actions {
+    background-color: #f7f7f7;
+    padding: 20px;
+    width: 20%;
+  }
+  
+  .profile-main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .profile-avatar .avatar-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcccb;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  
+  .profile-stats p,
+  .profile-status p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-profile-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-tabs {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .profile-tabs button {
+    padding: 10px 15px;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .profile-tabs button.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .status-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .personal-info,
+  .comments-section {
+    margin: 20px 0;
+  }
+  
+  .task-btn {
+    display: block;
+    background: #ffcccb;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+  
+  .comment-box {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .comment-box textarea {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .actions-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .actions-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .action-btn {
+    display: block;
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+  

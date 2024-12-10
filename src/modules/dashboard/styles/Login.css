@@ -1,0 +1,189 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+  }
+  
+  /* Container */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    
+  }
+  
+  /* Header */
+  .login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .brand-logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-item:hover {
+    color: #fff;
+  }
+  
+  /* Login Box */
+  .login-box {
+    width: 360px;
+    margin: auto;
+    padding: 30px;
+    background-color: #292929;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #1c1c1c;
+    color: #fff;
+  }
+  
+  .input-field::placeholder {
+    color: #888;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional Options */
+  .additional-options {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .additional-options a {
+    color: #00bcd4;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .additional-options a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #292929;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  /* Header */
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Ensure padding doesn't add to the width */
+    overflow: hidden; /* Prevent overflow from child elements */
+  }
+  
+  .brand-logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent logo text from wrapping */
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if the content overflows */
+    gap: 20px;
+  }
+  
+  .nav-item {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevent wrapping for individual items */
+  }
+  
+  .nav-item:hover {
+    color: #fff;
+  }
+  
+  .sign-up-btn {
+    background-color: #00b300;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent button text from wrapping */
+  }
+  
+  .sign-up-btn:hover {
+    background-color: #008000;
+  }
+  

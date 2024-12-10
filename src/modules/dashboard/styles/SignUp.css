@@ -1,0 +1,227 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('D:/React/code-m/public/bgimage1.jpeg') center center / cover no-repeat fixed;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+} 
+
+.signup-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push footer to the bottom */
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */ 
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent overlay */
+  backdrop-filter: blur(5px);
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport height */
+  width: 100%;
+}
+
+/* Header Styling */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 40px; */
+  /* background-color: rgba(0, 0, 0, 0.8); */
+   /* Transparent header background */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.login-button {
+  background-color: #00b300;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #008000;
+}
+
+/* Signup Box Styling */
+.signup-box {
+  width: 400px;
+  background-color: rgba(25, 25, 25, 0.95); /* Darker background for contrast */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  margin-top: 200px; /* Offset from the fixed header */
+  z-index: 100;
+  color: #fff; /* Text color for readability */
+}
+
+.signup-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input Group Styling */
+.input-group label {
+  font-size: 0.9rem;
+  color: #bbb; /* Slightly lighter text for labels */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-field,
+.dob-field {
+  width: 94%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #333; /* Subtle border */
+  border-radius: 5px;
+  background-color: #2b2b2b; /* Darker input background */
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.input-field::placeholder,
+.dob-field option {
+  color: #666; /* Placeholder color */
+}
+
+/* DOB Selectors */
+.dob-selectors {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dob-field {
+  flex: 1; /* Allow equal spacing */
+}
+
+/* Gender Select */
+.gender-select label {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.gender-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gender-btn {
+  background-color: #444; /* Neutral background */
+  border: 1px solid #555;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gender-btn:hover {
+  background-color: #666;
+}
+
+/* Submit Button */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #007bff; /* Vibrant blue */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Additional Info */
+.additional-info {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.additional-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.additional-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 40px;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9rem;
+  position: relative; /* Let footer flow naturally */
+  margin-top: auto; /* Push footer to the bottom of the page when content is short */
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer nav {
+  margin-top: 10px;
+}
+
+.footer a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .signup-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .header, .footer {
+    padding: 10px 20px;
+  }
+
+  .brand-logo {
+    font-size: 1.5rem;
+  }
+
+  .login-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

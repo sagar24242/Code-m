@@ -1,0 +1,16 @@
+.dashboard-sidebar {
+    background: #222;
+    color: white;
+    padding: 20px;
+  }
+  
+  .dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dashboard-sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+  }
+  
